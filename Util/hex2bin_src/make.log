@@ -1,0 +1,5 @@
+gcc -c -std=c99 -O2 -Wall -pedantic hex2bin.c -o hex2bin.o
+gcc -O2 -Wall -o hex2bin hex2bin.o libcrc.o binary.o
+gcc -O2 -Wall -o mot2bin mot2bin.o libcrc.o binary.o
+gcc: error: mot2bin.o: Aucun fichier ou dossier de ce type
+make: *** [mot2bin] Erreur 1

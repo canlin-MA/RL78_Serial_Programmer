@@ -1,0 +1,132 @@
+hex2bin -c nochecksum.hex
+Checksum error in record 1: should be 19
+Checksum error in record 2: should be 12
+Checksum error in record 3: should be AF
+Checksum error in record 4: should be 6C
+Checksum error in record 5: should be AE
+Checksum error in record 6: should be 38
+Checksum error in record 7: should be 98
+Checksum error in record 8: should be 1B
+Checksum error in record 9: should be C0
+Checksum error in record 10: should be 22
+Checksum error in record 11: should be EB
+Checksum error in record 12: should be 97
+Checksum error in record 13: should be C7
+Checksum error in record 14: should be 0B
+Checksum error in record 15: should be 6A
+Checksum error in record 16: should be 14
+Checksum error in record 17: should be 69
+Checksum error in record 18: should be 80
+Checksum error in record 19: should be 55
+Checksum error in record 20: should be 07
+Checksum error in record 21: should be F5
+Checksum error in record 22: should be 28
+Checksum error in record 23: should be 27
+Checksum error detected.
+hex2bin v2.0, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Binary file start = 00006000
+Records start     = 00006000
+Highest address   = 00006167
+Pad Byte          = FF
+make: [test] Erreur 1 (ignorée)
+Pass
+hex2bin -c linear.hex
+hex2bin v2.0, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Binary file start = 00010100
+Records start     = 00010100
+Highest address   = 00010D7F
+Pad Byte          = FF
+Pass
+hex2bin -c segmented.hex
+hex2bin v2.0, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Binary file start = 00010100
+Records start     = 00010100
+Highest address   = 00010D7F
+Pad Byte          = FF
+Pass
+hex2bin -c example.hex
+hex2bin v2.0, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Binary file start = 00000100
+Records start     = 00000100
+Highest address   = 00000D7F
+Pad Byte          = FF
+Pass
+hex2bin -c -s 0 -p 0 example.hex
+hex2bin v2.0, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Binary file start = 00000000
+Records start     = 00000100
+Highest address   = 00000D7F
+Pad Byte          = 0
+Pass
+mot2bin -c -s 0 -p 0 example2.s19
+Record total: 26
+Record total: 26
+mot2bin v2.0, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Binary file start = 00000000
+Records start     = 00000100
+Highest address   = 00000D7F
+Pad Byte          = 0
+Pass
+hex2bin -c test-end-memory.hex
+hex2bin v2.0, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Binary file start = 000F0000
+Records start     = 000F0000
+Highest address   = 000FFFFF
+Pad Byte          = FF
+Pass
+hex2bin -c test-overlap.hex
+Overlapped record detected
+Overlapped record detected
+Overlapped record detected
+Overlapped record detected
+Overlapped record detected
+Overlapped record detected
+Overlapped record detected
+Overlapped record detected
+Overlapped record detected
+Overlapped record detected
+Overlapped record detected
+Overlapped record detected
+hex2bin v2.0, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Binary file start = 00010100
+Records start     = 00010100
+Highest address   = 00010136
+Pad Byte          = FF
+Pass
+mot2bin -c test-addr_mask.s19
+Execution Address (unused): 000000
+Execution Address (unused): 000000
+mot2bin v2.0, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 001EFFFF
+Pad Byte          = FF
+Pass
+hex2bin -c test.hex
+cmp: Fin-de-fichier (EOF) sur test-addr_mask.bin
+0 byte length Data record ignored
+hex2bin v2.0, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Binary file start = 00000137
+Records start     = 00000137
+Highest address   = 0000017C
+Pad Byte          = FF
+Pass
+hex2bin -c test-extra-lf.hex
+0 byte length Data record ignored
+hex2bin v2.0, Copyright (C) 2015 Jacques Pelletier & contributors
+
+Binary file start = 00000137
+Records start     = 00000137
+Highest address   = 0000017C
+Pad Byte          = FF
+Pass
